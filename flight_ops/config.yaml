@@ -1,0 +1,14 @@
+name: Logbook
+version: "0.1.15"
+slug: flight_ops_logbook
+description: Flight logbook
+arch:
+  - amd64
+image: ghcr.io/protoss46/flight-ops-addon
+boot: auto
+init: false
+host_network: true
+map:
+  - share:rw
+webui: "http://[HOST]:[PORT:8000]"
+watchdog: "http://[HOST]:[PORT:8000]/api/health"
